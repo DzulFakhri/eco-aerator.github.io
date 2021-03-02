@@ -322,7 +322,7 @@ ul.link li {padding: 8px 9px; padding-bottom: 0px; }
    }
 }
 
-@media screen and (max-width: 487px) {
+@media screen and (max-width: 488px) {
     .about .carousel img {
         padding-bottom: 200px;
    }

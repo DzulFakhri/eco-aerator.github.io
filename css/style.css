@@ -2416,3 +2416,7 @@ b {
 .contact-us {
      float: right;
 }
+
+.product .carousel-caption h1 {
+     color: #4bc714;
+}

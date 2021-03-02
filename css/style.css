@@ -434,14 +434,13 @@ a.readmore_bt {
 
 
 /*--------------------------------------------------------------------- header area ---------------------------------------------------------------------*/
-
 .header {
      font-family: poppins;
      padding: 10px 0px;
-    background: #052501;
+     background: #052501;
      background-repeat: no-repeat;
-background-size: 100% 100%;
-background-position: center center;
+     background-size: 100% 100%;
+     background-position: center center;
 }
 
 .logo {
@@ -1646,6 +1645,8 @@ font-weight: 500;
 .banner-main {
      position: relative;
      font-family: poppins;
+     overflow: hidden;
+     display: block;
 }
 .carousel-indicators li {
     width: 25px;
@@ -1655,12 +1656,12 @@ font-weight: 500;
    
 }
 #myCarousel .carousel-indicators li { margin-bottom: 40px;}
-.banner-main .carousel-item img {width: 100%;}
+.banner-main img {width: 100%; height: 100%;}
 #myCarousel a.carousel-control-prev {display: none;}
 #myCarousel a.carousel-control-next {display: none;}
 .carousel-indicators .active {background-color:#4bc714;}
 
-.banner-main .carousel-caption span {
+.banner-main span {
      font-size: 50px;
      font-weight: bold;
      line-height: 60px;
@@ -1670,7 +1671,7 @@ font-weight: 500;
      display: block;
 }
 
-.banner-main .carousel-caption h1 {
+.banner-main h1 {
      color: #fff;
      font-size: 110px;
      line-height: 84px;
@@ -1679,13 +1680,13 @@ font-weight: 500;
      text-transform: uppercase;
 }
 
-.banner-main .carousel-caption p {
+.banner-main p {
      font-size: 25px;
      line-height: 31px;
      padding: 6px 0px 50px 0px;
 }
 
-.banner-main .carousel-caption .buynow  {
+.banner-main .buynow  {
 border: #fff solid 1px;
 background: #fff;
 width: 190px;
@@ -1700,7 +1701,7 @@ border-radius: 10px;
 margin-right: 20px;
 }
 
-.banner-main .carousel-caption .buynow:hover {
+.banner-main .buynow:hover {
      border: #052501 solid 1px;
      background: #052501;
      color: #fff;
@@ -1788,6 +1789,18 @@ color: #fff;
      padding: 90px 0;
 }
 
+.about .carousel {
+     padding-bottom: 10px;
+}
+
+.about .carousel img {
+     padding-bottom: 120px;
+}
+
+.about .carousel p {
+     color: #000;
+}
+
 .about .about_img figure {
      margin: 0px;
 }
@@ -1840,6 +1853,8 @@ border-radius: 18px;
 .about_img {margin-top: 25px;}
 .about_img figure {margin: 0;}
 .about_img figure img {width: 100%;}
+
+
 /** end about **/
 
 
@@ -1924,7 +1939,7 @@ margin-top: -100px;
 
 /** product **/
 
-.product {padding: 90px 0px 60px 0px;}
+.product {padding-top: 90px;}
 .product .title h2 {max-width: 425px;
  width: 100%; 
 }
@@ -1946,11 +1961,19 @@ box-sizing: border-box;
 }
 .product .product_box figure img {width: 100%; height: 100%;}
 
+.product .description h2,
+.product .description p {
+     text-align: justify;
+     line-height: 33px;
+     color: #4c4a49;
+     font-weight: 500;
+}
 
-
-
-
-
+.product img {
+     float: left;
+     width: 50%;
+     padding: 0 20px 20px 0;
+}
 
 
 /** end product **/
@@ -2299,7 +2322,7 @@ border-radius: 10px;
      position: relative;
      max-width: 1200px;
      margin: 0 auto;
-   }
+}
    
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
@@ -2319,7 +2342,7 @@ border-radius: 10px;
      position: relative;
      background-color: inherit;
      width: 50%;
-   }
+}
    
 /* The circles on the timeline */
 .container-timeline::after {
@@ -2385,51 +2408,11 @@ border-radius: 10px;
      position: relative;
      border-radius: 6px;
 }
-   
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-     /* Place the timelime to the left */
-     .timeline::after {
-          left: 31px;
-     }
-   
-     /* Full-width containers */
-     .container-timeline {
-          width: 100%;
-          padding-left: 70px;
-          padding-right: 25px;
-     }
-   
-     /* Make sure that all arrows are pointing leftwards */
-     .container-timeline::before {
-          left: 60px;
-          border: medium solid white;
-          border-width: 10px 10px 10px 0;
-          border-color: transparent white transparent transparent;
-     }
-   
-     /* Make sure all circles are at the same spot */
-     .left::after, .right::after {
-          left: 18px;
-     }
-   
-     /* Make all right containers behave like the left ones */
-     .right {
-          left: 0%;
-     }
-   }
+
+b {
+     font-weight: 600;
+}
 
 .contact-us {
      float: right;
-}
-
-.carousel-caption h1 {
-     color: #4bc714;
-}
-
-@media screen and (max-width: 768px) {
-     .product img {
-          margin-left: 50px;
-          margin-bottom: 35px;
-     }
 }
